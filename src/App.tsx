@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import React from 'react';
 // import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 // import { AuthProvider } from './context/AuthContext';
@@ -75,6 +76,8 @@
 // }
 
 
+=======
+>>>>>>> 8617e76f91ec74e34cb3cf321e7df64f20e36e9a
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
@@ -115,17 +118,28 @@ export default function App() {
           <Router>
             <div className="min-h-screen bg-slate-50 text-slate-900 transition-colors duration-200">
               <Routes>
+<<<<<<< HEAD
 
                 {/* Public General Routes */}
                 <Route path="/" element={<LandingPage />} />
                 <Route path="/landing" element={<LandingPage />} />
 
+=======
+                {/* Public General Routes */}
+                <Route path="/" element={<Navigate to="/login" replace />} />
+                <Route path="/landing" element={<LandingPage />} />
+                
+>>>>>>> 8617e76f91ec74e34cb3cf321e7df64f20e36e9a
                 {/* Auth Guest-Only Routes */}
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="/signup" element={<SignupPage />} />
 
                 {/* Authenticated Application Routes (loaded with App Shell) */}
+<<<<<<< HEAD
                 <Route
+=======
+                <Route 
+>>>>>>> 8617e76f91ec74e34cb3cf321e7df64f20e36e9a
                   element={
                     <ProtectedRoute>
                       <AppShell />
@@ -143,7 +157,10 @@ export default function App() {
 
                 {/* Catch All 404 */}
                 <Route path="*" element={<NotFoundPage />} />
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8617e76f91ec74e34cb3cf321e7df64f20e36e9a
               </Routes>
             </div>
           </Router>
@@ -151,4 +168,8 @@ export default function App() {
       </LanguageProvider>
     </ThemeProvider>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 8617e76f91ec74e34cb3cf321e7df64f20e36e9a
